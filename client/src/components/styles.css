@@ -1,0 +1,162 @@
+body {
+    background: #929292;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.Header {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.headerLeft {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    max-height: 100px;
+    align-items: center;
+}
+
+.headerLeft > img:first-child {
+    margin-left: 100px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.link {
+    font-size: 20px;
+}
+
+.link:hover {
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+.searchAndCart {
+    display: flex;
+    justify-content: space-between;
+    max-height: 100px;
+    width: 300px;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.Featured {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+    width: 100%;
+    background-color: gray;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.featuredContainer {
+    margin-left: 200px;
+}
+
+.featuredContainer > p {
+    font-size: 25px;
+    margin: 0px;
+}
+
+.featuredContainer > h1 {
+    margin-top: 15px;
+    font-size: 50px;
+}
+
+.featuredContainer > button {
+    width: fit-content;
+    padding: 15px 20px 35px 20px;
+    height: 30px;
+    font-size: 20px;
+    background-color: #7746ff;
+    color: white;
+    border-radius: 40px;
+    border: 0px solid black;
+}
+
+.Shortcut {
+    display: flex;
+    border: 1px solid #acacac;
+    padding: 15px;
+    width: 300px;
+    height: 230px;
+    margin: 0px 50px 0px 50px;
+}
+
+.Shortcut > h1 {
+    margin-left: 40px;
+    width: 40px;
+    font-size: 25px;
+    z-index: 1;
+}
+
+.Shortcut > img {
+    width: 150px;
+    height: 200px;
+    margin-top: 25px;
+    margin-left: 30px;
+    position: relative;
+}
+
+@media screen and (max-width: 1100px) {
+    .Shortcut {
+        margin: 0px 10px 0px 10px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .Shortcut {
+        margin: 0px 50px 0px 50px;
+    }
+    
+    .Shortcut > h1 {
+        margin-left: 15px;
+        font-size: 20px;
+    }
+
+    .Shortcut > img {
+        width: 100px;
+        height: 130px;
+    }
+
+    .Shortcut {
+        width: 200px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .featuredContainer {
+        margin-left: 100px;
+    }
+
+    .featuredContainer > h1 {
+        margin-top: 5px;
+        font-size: 40px;
+    }
+
+    .featuredContainer > button {
+        padding: 13px 30px 30px 30px;
+        height: 30px;
+        font-size: 17px;
+        border-radius: 40px;
+    }
+
+    .Shortcut {
+        margin: 0px 10px 0px 10px;
+    }
+}
